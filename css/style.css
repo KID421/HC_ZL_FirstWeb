@@ -2,3 +2,20 @@
     margin: 0;
     padding: 0;
 }
+
+/* 導覽列 */
+nav {
+    padding: 30px;
+    /* 顯示：靈活 */
+    display: flex;
+    /* 均勻排列每個子元素，首個放起點，最後放終點 */
+    justify-content: space-between;
+}
+
+nav ol li {
+    display: inline-block;
+}
+
+#logo img {
+    width: 30px;
+}
