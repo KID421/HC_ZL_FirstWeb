@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    height: 3000px;
+}
+
 /* 導覽列 */
 nav {
     padding: 30px;
@@ -10,12 +14,28 @@ nav {
     display: flex;
     /* 均勻排列每個子元素，首個放起點，最後放終點 */
     justify-content: space-between;
+    /* 盒型陰影：左右 上下 模糊 顏色 */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 nav ol li {
+    /* 顯示：行內-區塊 */
     display: inline-block;
+    padding: 0 20px;
+}
+
+nav ol li a {
+    color: black;
+    /* 文字裝飾：無 (去掉底線) */
+    text-decoration: none;
+}
+
+nav ol li a:hover {
+    color: #9F0403;
 }
 
 #logo img {
     width: 30px;
+    /* 垂直對齊：中間 */
+    vertical-align: middle;
 }
